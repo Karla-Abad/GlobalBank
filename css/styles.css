@@ -1,10 +1,11 @@
 :root {
   --color-primary: #126bc5;
-  --color-secondary: #010136;
+  --color-secondary: #03039d;
   --color-accent--blue: #0b6efd;
   --color-accent--green: #398100;
   --color-accent--green-hover: #014101;
   --color-body: #414042;
+  --color-headings: #1e1e1c;
 }
 
 *,
@@ -29,4 +30,93 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-primary);
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.link-arrow:hover {
+  color: var(--color-secondary);
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 2.2rem;
+  }
+}
+
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--large {
+  width: 65px;
+  height: 65px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--extrasmall {
+  width: 16px;
+  height: 16px;
+}
+
+.icon--light {
+  fill: #c4c4c4;
+}
+
+.icon--dark {
+  fill: #787878;
 }
