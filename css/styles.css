@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #126bc5;
+  --color-secondary: #010136;
+  --color-accent--blue: #0b6efd;
+  --color-accent--green: #398100;
+  --color-accent--green-hover: #014101;
+  --color-body: #414042;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
