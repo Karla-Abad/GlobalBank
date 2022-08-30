@@ -3,7 +3,7 @@
   --color-secondary: #03039d;
   --color-accent--blue: #0b6efd;
   --color-accent--green: #398100;
-  --color-accent--green-hover: #014101;
+  --color-accent--green-hover: #025e02;
   --color-body: #414042;
   --color-headings: #1e1e1c;
 }
@@ -70,15 +70,13 @@ h4 {
 }
 
 /* Links */
-a {
-  text-decoration: none;
-}
 
 .link-arrow {
   color: var(--color-primary);
   font-size: 1.8rem;
   font-weight: 600;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .link-arrow:hover {
@@ -119,4 +117,44 @@ a {
 
 .icon--dark {
   fill: #787878;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+  outline: 0;
+  padding: 10px 10px;
+  white-space: nowrap;
+}
+
+.btn--stretched {
+  width: 100%;
+}
+
+.btn--green {
+  color: #fff;
+  background: var(--color-accent--green);
+  transition: background 0.3s;
+}
+
+.btn--green:hover {
+  background: var(--color-accent--green-hover);
+}
+
+.btn--blue {
+  color: #fff;
+  background: var(--color-accent--blue);
+}
+
+@media screen and (min-width: 660px) {
+  .btn {
+    font-size: 2rem;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
