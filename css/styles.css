@@ -83,6 +83,12 @@ h4 {
   color: var(--color-secondary);
 }
 
+.link--media {
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: normal;
+}
+
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 2.2rem;
@@ -298,4 +304,16 @@ input:not(:placeholder-shown) + .form__label {
 .form__container a.form__link {
   margin-left: 0;
   display: block;
+}
+
+/* Media */
+
+.media__title {
+  color: var(--color-body);
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+
+.media__description {
+  font-size: 2.5rem;
 }
