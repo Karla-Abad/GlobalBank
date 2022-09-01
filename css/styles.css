@@ -112,6 +112,11 @@ h4 {
   height: 30px;
 }
 
+.icon--medium-small {
+  width: 25px;
+  height: 25px;
+}
+
 .icon--extrasmall {
   width: 16px;
   height: 16px;
@@ -456,5 +461,128 @@ input:not(:placeholder-shown) + .form__label {
 
   .story__image {
     width: 100%;
+  }
+}
+
+/* Containers */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.nav {
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo img {
+  width: 130px;
+}
+
+.nav .btn {
+  font-size: 1.6rem;
+}
+
+.nav .btn--blue:hover {
+  background: var(--color-secondary);
+}
+
+.nav__signin-btn,
+.nav__signin-icon {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav--flex {
+    display: flex;
+  }
+
+  .nav__signin {
+    align-self: flex-start;
+  }
+
+  .nav__signin-link {
+    display: none;
+  }
+
+  .nav__signin-btn,
+  .nav__signin-icon {
+    display: inline;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  .nav .btn {
+    padding: 8px 20px;
+  }
+
+  .nav__logo {
+    margin-left: 75px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 991px) {
+  .nav--desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* Navigation Desktop */
+
+.nav__sections a {
+  color: var(--color-body);
+  font-size: 1.75rem;
+  font-weight: normal;
+}
+
+.nav__sections a:hover {
+  color: var(--color-body);
+}
+
+.nav__sections img {
+  width: 170px;
+  margin-left: 40px;
+}
+
+.nav__list--light a {
+  font-size: 1.5rem;
+  opacity: 0.95;
+}
+
+.nav__list--dark .list__item {
+  margin-right: 30px;
+}
+
+.nav--flex-justified {
+  justify-content: space-between;
+}
+
+.nav--flex-justified .icon--medium-small {
+  vertical-align: middle;
+}
+
+.nav__sections .nav--desktop-accent {
+  color: var(--color-headings);
+  font-weight: 600;
+  border-bottom: 4px solid var(--color-accent--blue);
+}
+
+@media screen and (min-width: 1180px) {
+  .nav__sections a {
+    font-size: 2.15rem;
+  }
+
+  .nav__list--light a {
+    font-size: 1.75rem;
   }
 }
