@@ -590,7 +590,7 @@ input:not(:placeholder-shown) + .form__label {
   }
 }
 
-/* Hero */
+/* Hero Block */
 .hero {
   color: #fff;
   font-size: 1.5rem;
@@ -669,5 +669,56 @@ input:not(:placeholder-shown) + .form__label {
   .form__container a {
     font-size: 1.5rem;
     opacity: 0.75;
+  }
+}
+
+/* Credit Cards Block */
+
+.credit-cards {
+  padding: 10px;
+}
+
+.credit-card-horizontal__image {
+  display: none;
+}
+
+.credit-card-vertical__image {
+  display: none;
+}
+
+.credit-card-vertical-stretched__image,
+.credit-card-vertical__image,
+.credit-card-horizontal__image {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 481px) {
+  .credit-card-vertical-stretched__image {
+    display: none;
+  }
+
+  .credit-card-horizontal__image {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .credit-card-horizontal__image {
+    display: none;
+  }
+
+  .container,
+  .credit-card-vertical__image {
+    display: flex;
+    margin: auto;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .credit-card-vertical__image {
+    width: 95%;
   }
 }
