@@ -364,7 +364,7 @@ input:not(:placeholder-shown) + .form__label {
 }
 
 .feature .btn {
-  padding: 8px 12vw;
+  padding: 8px 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -379,10 +379,10 @@ input:not(:placeholder-shown) + .form__label {
   }
 
   .feature .btn {
-    padding: 8px 8vw;
+    padding: 8px 50px;
   }
   .grid--feature {
-    grid-template-rows: 1fr 2fr;
+    /* grid-template-rows: 1fr 2fr; */
     padding: 0 3rem;
   }
 }
@@ -708,7 +708,7 @@ input:not(:placeholder-shown) + .form__label {
     display: none;
   }
 
-  .container,
+  .credit-card__container,
   .credit-card-vertical__image {
     display: flex;
     margin: auto;
@@ -720,5 +720,35 @@ input:not(:placeholder-shown) + .form__label {
 
   .credit-card-vertical__image {
     width: 95%;
+  }
+}
+
+/* Features Block */
+
+.features {
+  padding: 10px;
+}
+
+.feature {
+  margin-bottom: 25px;
+}
+
+.feature:nth-of-type(even) .feature__image {
+  order: 3;
+}
+
+.feature:nth-of-type(even) .grid--feature {
+  grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__image {
+    order: 3;
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+  }
+
+  .feature:nth-of-type(even) .feature__title {
+    grid-column: 1 / span 1;
   }
 }
