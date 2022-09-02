@@ -409,9 +409,9 @@ input:not(:placeholder-shown) + .form__label {
 
 /* Stories */
 .story {
-  border-bottom: 1px;
   padding: 15px 10px;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .story::after {
@@ -435,8 +435,8 @@ input:not(:placeholder-shown) + .form__label {
 
 .story__description {
   color: var(--color-body);
-  font-size: 1.8rem;
-  font-weight: normal;
+  font-size: 1.7rem;
+  font-weight: 400;
   line-height: 1.3;
   margin-top: 0;
   margin-left: 1.5rem;
@@ -464,6 +464,10 @@ input:not(:placeholder-shown) + .form__label {
 
   .story__image {
     width: 100%;
+  }
+
+  .story {
+    margin-bottom: 1rem;
   }
 }
 
@@ -750,5 +754,29 @@ input:not(:placeholder-shown) + .form__label {
 
   .feature:nth-of-type(even) .feature__title {
     grid-column: 1 / span 1;
+  }
+}
+
+/* Stories Block */
+
+.stories {
+  background: #f6f5f5;
+  padding: 30px 20px;
+}
+
+.stories__heading {
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .stories__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .link--story {
+    padding-left: 10px;
   }
 }
