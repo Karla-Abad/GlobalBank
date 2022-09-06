@@ -780,3 +780,29 @@ input:not(:placeholder-shown) + .form__label {
     padding-left: 10px;
   }
 }
+
+/* Social Media Block */
+
+.social-media__container {
+  font-size: 1.75rem;
+  margin-top: 4rem;
+  border-top: 1px solid lightgray;
+  padding-top: 2rem;
+}
+
+.social-media__icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media__icons,
+.social-media__link {
+  align-self: center;
+  margin-left: 10px;
+}
+
+.social-media__icons p {
+  margin-right: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
