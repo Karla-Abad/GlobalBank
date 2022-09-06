@@ -181,7 +181,7 @@ h4 {
 }
 
 .list__item {
-  margin-bottom: 1rem;
+  border-bottom: 6px solid white;
 }
 
 .list--inline .list__item {
