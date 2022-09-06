@@ -790,6 +790,7 @@ input:not(:placeholder-shown) + .form__label {
 .social-media__container {
   font-size: 1.75rem;
   margin-top: 4rem;
+  margin-bottom: 4rem;
   border-top: 1px solid lightgray;
   padding-top: 2rem;
 }
