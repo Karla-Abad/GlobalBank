@@ -612,7 +612,7 @@ input:not(:placeholder-shown) + .form__label {
 }
 
 .hero__content {
-  width: 300px;
+  width: auto;
 }
 
 .hero__title {
@@ -624,12 +624,12 @@ input:not(:placeholder-shown) + .form__label {
 
 .hero__button {
   font-size: 1.75rem;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .hero__image {
-  height: 170px;
+  height: 150px;
   margin-right: 10px;
 }
 
@@ -655,6 +655,11 @@ input:not(:placeholder-shown) + .form__label {
 
   .hero__content {
     width: 350px;
+  }
+
+  .hero__button {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
